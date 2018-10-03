@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Node Chat</title>
     <link href="/styles.css" rel="stylesheet" />
+    <script src='http://code.jquery.com/jquery-1.6.1.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
   </head>
   <body>
@@ -16,6 +17,7 @@
       <input type="text" id="username" placeholder="Enter username:">
       <input type="text" id="message" placeholder="Enter message:">
       <button id="send">SEND</button>
+      <div class="filebutton">Send Image<input type="file" id="imagefile" accept="image/*"></div>
     </div>
     </center>
     <script src="/chat.js"></script>

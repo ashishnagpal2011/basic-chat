@@ -23,4 +23,10 @@ io.on('connection',function(socket){
 	socket.on('typing',function(data){
 		socket.broadcast.emit('typing',data);
 	});
+
+	socket.on('user image', function (msg) {
+      //console.log(msg);
+      socket.broadcast.emit('user image',msg);
+    });
+
 });
